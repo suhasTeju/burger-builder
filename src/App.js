@@ -1,7 +1,17 @@
 import appCss from './App.css'
+import Layout from './components/layout/Layout'
+import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder'
+import React,{Component} from 'react'
 
-function App() {
-  return <div className={appCss}>Hello world</div>;
+
+class App extends Component {
+  render(){
+    return (<div className={appCss}>
+      <Layout>
+        <BurgerBuilder />
+      </Layout>
+    </div>);
+  }
 }
 
 export default App;
